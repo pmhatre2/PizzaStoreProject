@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project.ProjectControl">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="800.0">
+         <image>
+            <Image url="@Background.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="310.0" fitWidth="448.0" layoutX="245.0" layoutY="-25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Logo.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="119.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please Select User Type and Enter ASURITE ID">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Text>
+      <TextField fx:id="ID" layoutX="325.0" layoutY="367.0" promptText="Enter ID" />
+      <Button fx:id="loginButton" layoutX="367.0" layoutY="444.0" mnemonicParsing="false" onAction="#validate" prefHeight="39.0" prefWidth="65.0" text="NEXT" textAlignment="CENTER" />
+      <RadioButton fx:id="ProcessingAgent" layoutX="305.0" layoutY="315.0" mnemonicParsing="false" text="Processing Agent">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="selections" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="Student" layoutX="161.0" layoutY="315.0" mnemonicParsing="false" text="Student">
+         <toggleGroup>
+            <ToggleGroup fx:id="selections" />
+         </toggleGroup>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="Chef" layoutX="539.0" layoutY="315.0" mnemonicParsing="false" text="Chef">
+         <toggleGroup>
+            <ToggleGroup fx:id="selections" />
+         </toggleGroup>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </RadioButton>
+      <Text layoutX="310.0" layoutY="423.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Invalid ID, Please Retry">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

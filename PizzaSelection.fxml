@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project.ProjectControl">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="800.0">
+         <image>
+            <Image url="@Background.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="169.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose Your Pizza Type">
+         <font>
+            <Font size="44.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="300.0" fitWidth="200.0" layoutX="650.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Margheritta%20pizza.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="300.0" fitWidth="200.0" layoutX="450.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Hawaiin%20pizza.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="300.0" fitWidth="200.0" layoutX="50.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Pepperoni%20pizza.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="300.0" fitWidth="200.0" layoutX="250.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Cheese%20pizza.png" />
+         </image>
+      </ImageView>
+      <RadioButton fx:id="Pepperoni" layoutX="50.0" layoutY="402.0" mnemonicParsing="false" text="Pepperoni">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="pizzaType" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="Cheese" layoutX="250.0" layoutY="402.0" mnemonicParsing="false" text="Cheese" toggleGroup="$pizzaType">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="Hawaiian" layoutX="450.0" layoutY="402.0" mnemonicParsing="false" text="Hawaiian" toggleGroup="$pizzaType">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="Margherita" layoutX="632.0" layoutY="402.0" mnemonicParsing="false" text="Margherita" toggleGroup="$pizzaType">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </RadioButton>
+      <Button fx:id="pizzaTypeButton" layoutX="367.0" layoutY="439.0" mnemonicParsing="false" onAction="#confirmPizzaType" prefHeight="39.0" prefWidth="65.0" text="NEXT" textAlignment="CENTER" />
+   </children>
+</AnchorPane>
