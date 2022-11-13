@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="25.0" layoutY="55.0" prefHeight="420.0" prefWidth="750.0" style="-fx-background-color: red;">
+         <children>
+            <AnchorPane layoutX="7.0" layoutY="4.0" prefHeight="413.0" prefWidth="368.0">
+               <children>
+                  <TextField layoutX="14.0" layoutY="37.0" text="Order:" />
+                  <TextField layoutX="14.0" layoutY="97.0" text="Order:" />
+                  <TextField layoutX="14.0" layoutY="157.0" text="Order:" />
+                  <TextField layoutX="14.0" layoutY="217.0" text="Order:" />
+                  <Label layoutX="46.0" layoutY="1.0" text="Current Orders:" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="375.0" layoutY="7.0" prefHeight="413.0" prefWidth="368.0">
+               <children>
+                  <TextField layoutX="14.0" layoutY="37.0" text="Order:" />
+                  <TextField layoutX="14.0" layoutY="97.0" text="Order:" />
+                  <TextField layoutX="14.0" layoutY="157.0" text="Order:" />
+                  <TextField layoutX="14.0" layoutY="217.0" text="Order:" />
+                  <Button layoutX="215.0" layoutY="37.0" mnemonicParsing="false" text="Cooking" />
+                  <Button layoutX="300.0" layoutY="37.0" mnemonicParsing="false" text="Ready" />
+                  <Button layoutX="215.0" layoutY="97.0" mnemonicParsing="false" text="Cooking" />
+                  <Button layoutX="300.0" layoutY="97.0" mnemonicParsing="false" text="Ready" />
+                  <Button layoutX="215.0" layoutY="157.0" mnemonicParsing="false" text="Cooking" />
+                  <Button layoutX="300.0" layoutY="157.0" mnemonicParsing="false" text="Ready" />
+                  <Button layoutX="215.0" layoutY="217.0" mnemonicParsing="false" text="Cooking" />
+                  <Button layoutX="300.0" layoutY="217.0" mnemonicParsing="false" text="Ready" />
+                  <Label layoutX="145.0" layoutY="1.0" text="Order Status:">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Button layoutX="366.0" layoutY="7.0" mnemonicParsing="false" text="Reset">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
