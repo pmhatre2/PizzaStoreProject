@@ -35,6 +35,23 @@ public class ProjectControl {
 	@FXML private TextField order1;
 	@FXML private Button refreshButton;
 	@FXML private Button clearButton;
+	@FXML private Button refreshButton2;
+	@FXML private TextField acceptedOrder1;
+	@FXML private TextField acceptedOrder2;
+	@FXML private TextField acceptedOrder3;
+	@FXML private TextField acceptedOrder4;
+	@FXML private TextField orderStatus1;
+	@FXML private TextField orderStatus2;
+	@FXML private TextField orderStatus3;
+	@FXML private TextField orderStatus4;
+	@FXML private Button cookingButton1;
+	@FXML private Button cookingButton2;
+	@FXML private Button cookingButton3;
+	@FXML private Button cookingButton4;
+	@FXML private Button readyButton1;
+	@FXML private Button readyButton2;
+	@FXML private Button readyButton3;
+	@FXML private Button readyButton4;
 	private Stage stage;
 	private Scene scene;
 	private Parent root;
@@ -86,7 +103,7 @@ public class ProjectControl {
 			
 			if(checkID) {
 				chef.setID(id);
-				root = FXMLLoader.load(getClass().getResource("PizzaSelection.fxml"));
+				root = FXMLLoader.load(getClass().getResource("ChefHomePage.fxml"));
 				stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
 				stage.setUserData(s);
 				scene = new Scene(root);
@@ -200,6 +217,14 @@ public class ProjectControl {
 	
 	public void refresh(ActionEvent e) throws IOException {
 		order1.setText("Order 1");
+		acceptedOrder1.setText("Order 1");
+		acceptedOrder2.setText("Order 2");
+		acceptedOrder3.setText("Order 3");
+		acceptedOrder4.setText("Order 4");
+		orderStatus1.setText("Order 1");
+		orderStatus2.setText("Order 2");
+		orderStatus3.setText("Order 3");
+		orderStatus4.setText("Order 4");
 	}
 	
 	public void pushButton(ActionEvent e) throws IOException {
